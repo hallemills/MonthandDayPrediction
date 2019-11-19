@@ -18,12 +18,15 @@ public class Main {
         System.out.println("Is fair and wise and good in every way");
 
 
+
+        System.out.println("Let's see what day you were born");
+
         Scanner keyboard = new Scanner(System.in);
-        boolean loop = true
+        boolean loop = true;
         while (loop) ;
-        int month = keyboard.nextInt();
-        String phrase = 
-        System.out.println(phrase);
+             int month = keyboard.nextInt();
+
+
 
 
     }
