@@ -19,19 +19,30 @@ public class Main {
 
 
 
-        System.out.println("Let's see what day you were born");
 
-        Scanner keyboard = new Scanner(System.in);
-        boolean loop = true;
-        while (loop) ;
-             int month = keyboard.nextInt();
 
 
 
 
     }
 
+    public static int ZellerCongruence(int month, int year, int dayofWeek) {
 
+        if (month == 1 || month == 2) {
+            month= (month + 12);
+            year--;
+        }
+
+
+
+
+
+
+
+
+
+
+    }
 }
 
 
