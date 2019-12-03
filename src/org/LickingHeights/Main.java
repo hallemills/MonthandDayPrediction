@@ -57,6 +57,7 @@ public class Main {
     public static int month(int dayOfmonth) {
 
 
+
         switch (dayOfmonth) {
             case 1:
             case 2:
@@ -75,9 +76,11 @@ public class Main {
     }
 
 }
+
+
     public static int ZellerCongurence(int month, int year) {
 
-    
+
         if (month == 1 || month == 2) {
             month = (month + 12);
             year--;
