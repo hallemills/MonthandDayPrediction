@@ -6,13 +6,15 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        int dayOfweek;
+        int dayOfWeek;
         int dayOfmonth;
         int month;
         int year;
         int yearOfcentury;
+        int monthPoem;
 
-        int ZellerCongruence;
+
+        int amountOfdaysInmonth;
         int answer;
         Scanner keyboard;
         keyboard = new Scanner(System.in);
@@ -32,80 +34,105 @@ public class Main {
 
             System.out.println("What year were you born?");
             year = keyboard.nextInt();
+
             System.out.println("What month were you born, give me the number");
             month = keyboard.nextInt();
-            System.out.println("What is the day you were born");
-            dayOfweek = keyboard.nextInt();
-            int answer =
 
+            System.out.println("What is the day you were born?");
+            dayOfWeek = keyboard.nextInt();
 
-            int answer2 = ZellerCongurence(month, year, dayOfmonth);
-            System.out.println(answer2);
-        }
+            System.out.println("What is the month you were born?");
+            month = keyboard.nextInt();
 
+            System.out.println("What is the year vou were born?");
+            year = keyboard.nextInt();
 
-        public static boolean
-
-
-
-
-
-
-
-
-
-
-
-        public static int zellerCongruence(int month, int year, int dayOfmonth) {
-
-            if (month == 1 || month == 2) {
-                month = (month + 12);
-                year--;
-            }
-            int yearZeroBased;
-            yearZeroBased = (year / 100);
-            int zellersCongruence;
-            zellersCongruence = 13 * (month + 1);
-            int yearofCentury;
-            yearofCentury = (year % 100);
-
-
-
-
-            int dayofWeek;
-            dayofWeek = ((dayOfmonth + ((zellersCongruence) / 5) + yearOfcentury + (yearOfcentury / 4) + ((yearZeroBased) / 4) - (2 * (yearZeroBased))) % 7);
-            return dayofWeek;
-
-        }
-
-
-        public static String MonthPoem(int dayofWeek) {
-            if (dayofWeek == 1) {
-                return "You were born on Monday \n" +
-                        "According to the poem, that means you are fair of face";
-            } else if (dayofWeek == 2) {
-                return "You were born on Tuesday \n" +
-                        "According to the poem, you're the child that is full of grace";
-            } else if (dayofWeek == 3) {
-                return "You were born on Wednesday \n" +
-                        "According to the poem, you are full of woe";
-            } else if (dayofWeek == 4) {
-                return "You were born on Thursday \n" +
-                        "According to the poem, you have far to go";
-            } else if (dayofWeek == 5) {
-                return "You were born on Friday \n" +
-                        "According to the poem, you the child that is loving and giving";
-            } else if (dayofWeek == 6) {
-                return "You were born on Saturday \n" +
-                        "According to the poem, you work hard for a living";
-            } else  {
-                return "You were born on Sabbath day" +
-                        "According to the poem, you are fair and wise in every way";
-            }
+            System.out.print("If you were born *month");
 
 
         }
     }
+
+
+    public static int month(int dayOfmonth) {
+
+
+        switch (dayOfmonth) {
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+            case 6:
+            case 7:
+            case 8:
+            case 9:
+            case 10:
+            case 11:
+            case 12:
+
+        }
+    }
+
+}
+    public static int ZellerCongurence(int month, int year) {
+
+    
+        if (month == 1 || month == 2) {
+            month = (month + 12);
+            year--;
+
+        }
+        int yearZeroBased;
+        yearZeroBased = (year / 100);
+        int ZellerCongurence;
+        ZellerCongurence = 13 * (month + 1);
+        int yearOfCentury;
+        yearOfCentury = (year % 100);
+    }
+
+
+    public static String MonthPoem(int dayOfweek) {
+        if (dayOfweek == 1) {
+            return "You were born on a Monday \n" +
+                    "According to the poem you are fair of face ";
+        } else if (dayOfweek == 2) {
+            return "You were born on a Tuesday \n" +
+                    "According to the poem you are fair of face ";
+        } else if (dayOfweek == 3) {
+            return "You were born on Wednesday \n" +
+                    "According to the poem you are full of woe";
+        } else if (dayOfweek == 4) {
+            return "You were born on Thursday \n" +
+                    "According to the poem you have far to go";
+        } else if (dayOfweek == 5) {
+            return "You were born on Friday \n" +
+                    "According to the poem you are loving and giving";
+        } else if (dayOfweek == 6) {
+            return "You were born on Saturday \n" +
+                    "According to the poem you work hard for a living";
+        } else {
+            return "You were born on Sabbath day \n" +
+                    "According to the poem you are fair and wise in every way";
+
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
